@@ -57,7 +57,6 @@ spec:
           "--trillian_log_server.tlog_id=3904496407287907110",
           "--log_type=prod",
           "--rekor_server.signer=$(KMS)",
-          "--trillian_log_server.sharding_config=/sharding/sharding-config.yaml",
           "--enable_attestation_storage=$(ENABLE_ATTESTATION_STORAGE)",
           "--attestation_storage_bucket=$(ATTESTATION_BUCKET)"
         ]
