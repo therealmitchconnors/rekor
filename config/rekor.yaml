@@ -64,22 +64,6 @@ spec:
         volumeMounts:
         - name: sharding-config
           mountPath: /sharding
-        env:
-        - name: KMS
-          valueFrom:
-            configMapKeyRef:
-              name: rekor-config
-              key: kms
-        - name: ENABLE_ATTESTATION_STORAGE
-          valueFrom:
-            configMapKeyRef:
-              name: rekor-config
-              key: enable_attestation_storage
-        - name: ATTESTATION_BUCKET
-          valueFrom:
-            configMapKeyRef:
-              name: rekor-config
-              key: attestation_bucket
         resources:
           requests:
             memory: "1G"
