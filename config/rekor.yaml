@@ -55,10 +55,7 @@ spec:
           "--redis_server.address=10.234.175.59",
           "--redis_server.port=6379",
           "--trillian_log_server.tlog_id=3904496407287907110",
-          "--log_type=prod",
-          "--rekor_server.signer=$(KMS)",
-          "--enable_attestation_storage=$(ENABLE_ATTESTATION_STORAGE)",
-          "--attestation_storage_bucket=$(ATTESTATION_BUCKET)"
+          "--log_type=prod"
         ]
         volumeMounts:
         - name: sharding-config
