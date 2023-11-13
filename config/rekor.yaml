@@ -43,10 +43,7 @@ spec:
     spec:
       containers:
       - name: rekor-server
-        image:
-          registry: ghcr.io
-          repository: sigstore/rekor/backfill-redis
-          pullPolicy: IfNotPresent
+        image: gcr.io/projectsigstore/rekor-server
         ports:
         - containerPort: 3000
         - containerPort: 2112 # metrics
